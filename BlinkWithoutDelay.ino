@@ -29,17 +29,17 @@
 */
 
 // constants won't change. Used here to set a pin number:
-const int ledPin =  LED_BUILTIN;// the number of the LED pin
+const uint8_t ledPin =  LED_BUILTIN;// the number of the LED pin
 
 // Variables will change:
-int ledState = LOW;             // ledState used to set the LED
+uint8_t ledState = LOW;             // ledState used to set the LED
 
 // Generally, you should use "unsigned long" for variables that hold time
 // The value will quickly become too large for an int to store
 unsigned long lastScheduledMillis = 0; // stores scheduled time, when the last action was performed
 
 // constants won't change:
-const long interval = 500;           // interval at which to blink (milliseconds)
+const unsigned long interval = 1000;   // interval at which to blink (milliseconds)
 
 void setup() {
   // set the digital pin as output:
